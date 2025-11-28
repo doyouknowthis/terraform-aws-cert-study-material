@@ -1,4 +1,4 @@
-# what's IaC
+# What's IaC
 
 Infrastructure as Code
 
@@ -15,9 +15,9 @@ right away, there are some downsides:
 - it's hard to track changes
 - it's hard to transfer knowledge to team members
 
-## Popular IaC tools
+# Popular IaC tools
 
-### Explicit
+## Explicit
 WYSIWYG and also more verbose. Uses scripting languages: json, yaml, xml, etc.
 
 - ARM templates (azure)
@@ -26,11 +26,11 @@ WYSIWYG and also more verbose. Uses scripting languages: json, yaml, xml, etc.
 - Cloud Deployment Manager (gcp)
 - Terraform (many)
 
-### Implicit
+## Implicit
 You write what you want, and the tool does the rest. Less verbose but could end up in misconfiguration.
 Uses programming languages: Javascript, Python, Ruby, etc.
 
 - AWS cloud development kit (cdk)
 - Pulumi (aws, azure, gcp, k8s)
 
-Terraform could be considered both.
+Terraform could be considered both. Declarative and imperative (some features)

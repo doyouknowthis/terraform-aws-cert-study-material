@@ -21,11 +21,12 @@ A website portal where plugins are published, and documentation is available.
 
 Avaiable for Terraform Enterprise. Terraform Cloud allows you to host your own private registry and publish private modules.
 
----
 
-## Providers/Command
+# Providers/Command
 
 CLI to list available providers.
+
+> terraform providers
 
 ### Provider/Configuration
 
@@ -56,9 +57,8 @@ terraform {
 }
 ```
 
----
 
-## Modules
+# Modules
 
 Is a group of resources that can be reused.
 

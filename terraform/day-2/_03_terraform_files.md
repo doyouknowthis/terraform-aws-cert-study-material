@@ -2,7 +2,7 @@
 
 aka Terraform files. Contain the configuration info for providers and resources.
 
-> files ending in `.tf` or `.tf,json`. HCL language
+> files ending in `.tf` or `.tf.json`. HCL language
 
 - Basic elements
 
@@ -21,7 +21,7 @@ resource "aws_instance" "example" {
 
 ## Alternative json syntax
 
-> files ending in `.tf.json`
+Files ending in `.tf.json`
 
 ```terraform
 {
@@ -51,3 +51,7 @@ terraform {
     # provider meta: module specific info for providers
 }
 ```
+
+# Hahicorp Configuration Language - HCL
+
+Open-source toolkit, used by many Hashicorp products (except Sentinel policies) that are both human and machine readable.

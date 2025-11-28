@@ -28,7 +28,6 @@ Variable definition files can be located in:
 
 > variables could be overwritten depending on how you define variables. (see list, order goes from top to bottom)  
 
----
 
 # Outputs
 
@@ -45,8 +44,8 @@ output "instance_id" {
 }
 ```
 
-> `terraform output` will show all outputs. \
-> `terraform output -json` will show all outputs in json format. \
+> `terraform output` will show all outputs \
+> `terraform output -json` will show all outputs in json format. or `terraform output -raw` for as-is value \
 > `terraform output my_output` will show a specific output.
 
 
@@ -60,11 +59,11 @@ locals {
 }
 
 locals {
-  my_second_name = local.my_name # reference
+  my_second_name = local.my_name # reference. notice it says 'local'
 }
 ```
 
-> it's best practice not to rely on local values too much
+> it's best practice to NOT rely on local values too much
 
 # Data sources
 
@@ -97,4 +96,4 @@ data "aws_ami" "ubuntu" {
 > **block-local values** \
 > count = count.index. when using count meta argument \
 > for_each = for_each.key. when using for_each meta argument \
-> self.<attribute> self reference within the block
+> self.<attribute> self reference within the block (provisioners and connections only)

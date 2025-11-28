@@ -11,12 +11,12 @@ The result of an expression is a value of a specific type.
     - number
     - boolean
 - no type
-    - null: not really a value, it's going to set whatever the default value is
+    - null: not really a value, it's going to set whatever the default value is for the specific provider.
 - complex/structural/collection
     - list (tuple)
     - map
 
-## strings
+### strings
 
 use double quotes. it can interpret escape sequences.
 
@@ -62,35 +62,33 @@ Hello ${name}
 %{~ endfor }
 ```
 
-## operators
+### operators
 
-basic mathematical operations
+Basic mathematical operations. Not going to list them here. (sorry)
 
-## conditional
+### conditional
 
-terraform supports ternary conditional
+Terraform supports ternary conditional
 
-> make sure the return type is the same in both cases
+> make sure the return type is the same in both cases: `condition ? true_value : false_value`
 
-`condition ? true_value : false_value`
+### for expressions
 
-## for expressions
+Allows you to iterate over a collection. it can accept a list, a map, a tuple, a set, or an object
 
-allows you to iterate over a collection. it can accept a list, a map, a tuple, a set, or an object
+- on a list: `[for s in var.list : upper(s)]`
+  - you can also get the index: `[for i, v in var.list : "${i} is ${v}"]`
+- on a map: `[for k, v in var.map : upper(k)]`
+  - to return a tuple use square braces: `[for k, v in var.map : upper(k)]`
+- for an object, ues curly braces: {for k, v in var.map : s => upper(k)}. result is {key => value, ...}
 
-> on a list: [for s in var.list : upper(s)] \
-> you can also get the index: [for i, v in var.list : "${i} is ${v}"] \
-> on a map: [for k, v in var.map : upper(k)] \
-> to return a tuple use square braces: [for k, v in var.map : upper(k)] \
-> for an object, ues curly braces: {for k, v in var.map : s => upper(k)}. result is {key => value, ...}
-
-You can use if statements inside the for expression for filter/reduce operations
+You can use `if` statements inside the for expression for filter/reduce operations
 
 > [for s in var.list : upper(s) if length(s) > 3]
 
-## splat expressions
+### splat expressions
 
-splat expression provides an shorter expressions for **for expressions**
+Provides an shorter expressions for **for expressions**
 
 > is represented by the * operator, originates from the ruby language
 
@@ -100,7 +98,7 @@ A result of for loop can be written in another way
 [for s in var.list : id] -> var.list[*].id
 ```
 
-## dynamic blocks
+### dynamic blocks
 
 allows you to dynamically create repeatable nested blocks
 
@@ -121,7 +119,8 @@ resource "aws_security_group" "example" {
 }
 ```
 
-# version constrains
+
+# Version constrains
 
 Terraform uses semantic versioning
 
@@ -134,3 +133,6 @@ A version constraint is a range of acceptable versions
 - \> >= < <=: compare against an specific version
 - ~>: allows the rightmost version (last number) to increment
 
+## Progressive versioning
+
+A good practice of using the latest version to keep a proactive stance of security, modernity and development agility.
