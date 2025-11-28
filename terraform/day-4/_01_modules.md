@@ -2,7 +2,7 @@
 
 ## How to find modules?
 
-Terraform Registry it's the best place
+Terraform Registry it's the best place.
 
 ## Use modules
 
@@ -38,7 +38,7 @@ Published modules support:
 
 Repo names must match the format: terraform-<provider>-<name>
 
-Public modules are managed via a public Git repo or Github. Once registered you can continue publishing version by simply creating tags
+Public modules are managed via a public Git repo or Github. Once registered you can continue publishing version by simply creating tags.
 
 ## Verified Modules
 

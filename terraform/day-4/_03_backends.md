@@ -23,7 +23,7 @@ backend "s3" {
 }
 ```
 
-A backup of the state will be stored locally
+**A backup of the state will be stored locally.**
 
 ## Enhanced backends
 
@@ -66,7 +66,7 @@ data "terraform_remote_state" "my_external_state" {
 
 It uses a terraform platform, it can be either:
 - terraform cloud
-- terraform enterprise
+- terraform enterprise (on-premise)
 
 With a remote backend, the terraform platform is responsible to execute operations (plan/apply/etc)
 
@@ -145,7 +145,7 @@ resource "aws_instance" "ec2" {
 }
 ```
 
-An alternative and more recommended way is to use specific "data" sources
+An alternative, **and a more recommended way**, is to use specific "data" sources
 
 ```hcl
 data "aws_s3_bucket" "my_bucket" {

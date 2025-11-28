@@ -1,16 +1,16 @@
 # Terraform State
 
-## what is a state?
+## What is a state?
 
 A particular condition of cloud resources at specific time.
 
-## how Terraform preserve state?
+## How Terraform preserves state?
 
 Terraform creates a file called `terraform.tfstate` in the current directory.
 
 > It's a json file. It has all the information about the resources, objects, etc.
 
-## available commands
+## Available commands
 
 - `terraform state list`: Lists resources in the state.
 - `terraform state show`: Shows a resource in the state.
@@ -20,6 +20,8 @@ Terraform creates a file called `terraform.tfstate` in the current directory.
 - `terraform state mv`: Move resource in the state.
 - `terraform state replace-provider`: Replace provider in the state.
 
+---
+
 ## terraform state mv
 
 Allows to:
@@ -27,10 +29,12 @@ Allows to:
 - rename a resource
 
 `terraform state mv aws_instance.dummy aws_instance.new_dummy`
+
 - move a resource to a different module
 > let's better not try to rename a resource when moving it to a different module.
 
 `terraform state mv aws_instance.dummy module.my_module.aws_instance.dummy`
+
 - move a module into a module
 
 `terraform state mv module.my_module module.parent.my_other_module`

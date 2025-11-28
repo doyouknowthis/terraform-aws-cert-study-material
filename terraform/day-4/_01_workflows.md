@@ -8,7 +8,7 @@ Core terraform workflow has three steps:
 
 ## Individual Practitioner
 
-As an individual, you could the following steps
+As an individual, you could the following steps:
 
 - write
   - Use you editor of choice
@@ -37,6 +37,6 @@ Mostly the same as individual, except you work with more people and will require
 - **Figure out where to store secrets**
 - **Manage multiple environments**
 
-## Team - Terraform Cloud
+## Team / Terraform Cloud
 
-Mostly the same as Team, but it resolves many of the highlighted bullet points in there 
+Mostly the same as Team, but it resolves many of the highlighted bullet points in there.
