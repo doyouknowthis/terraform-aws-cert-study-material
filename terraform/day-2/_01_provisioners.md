@@ -1,6 +1,17 @@
+# Provisioners
+
+Provisioners install stfw, edit files and provision machines created with Terraform.
+
+There are 2 options: cloud-init and packer (it seems like cloud-init is preferred)
+
+> provisioners should be used as a last resort. there are better alternatives.
+
+**The main reason is that is out of the scope of Terraform (infra). Scripts are not reflected in a plan.**
+
+
 # Commands
 
-- Local-exec
+## Local-exec
 
 Allows you to execute a (local) command _after_ a resource is provisioned.
 
@@ -19,13 +30,15 @@ resource "null_resource" "example" {
   }
 }
 ```
----
 
-- Remote-exec
+
+## Remote-exec
 
 Allows you to execute a command **on a target server** _after_ a resource is provisioned.
 
 Used for simple tasks. It's better to use cloud-init or other tools.
+
+> for more complex task, better use cloud-init
 
 Parameters
 - inline: list of command strings
@@ -35,11 +48,11 @@ Parameters
 resource "null_resource" "example" {
   provisioner "remote-exec" {
     inline = [
-      "echo Hello World"
+      "echo Hello World",
 ```
----
 
-- File
+
+## File
 
 Allows you to upload a file to a newly created resource.
 
@@ -58,9 +71,9 @@ resource "null_resource" "example" {
   }
 }
 ```
----
 
-- Connection block
+
+## Connection block
 
 Tells a provisioner how to connect to the target server.
 
@@ -79,19 +92,18 @@ resource "null_resource" "example" {
     destination = "/var/www/html/index.html"
   }
 ```
----
 
-- Null resource
+
+## Null resource
 
 Placeholder for a resource that has no association to a provider resources.
 
 Parameters:
 - triggers: a map of key/value pairs that will trigger the resource to be recreated.
----
 
-- Terraform Data
 
-Similar to null_resource. It doesn't require the configuration of a provider.
+## Terraform Data
+
+Similar to `null_resource`. It doesn't require the configuration of a provider.
 
 > practically interchangeable with null_resource. Might be recommended to use terraform_data instead of null_resource.
-

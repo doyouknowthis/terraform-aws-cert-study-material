@@ -5,7 +5,7 @@ Allows you to manage multiple environments or alternate state files
 Two variants
 
 - CLI workspaces: manage state files either locally or remotely
-- Terraform Cloud workspaces: completely different thing, it's more like projects or folder
+- Terraform Cloud workspaces: **completely different thing**, it's more like projects or folder
 
 > workspaces are similar to git branches \
 > it's technically the same as renaming your state file
@@ -49,7 +49,6 @@ A terraform configuration has a backend that:
 
 Multiple workspaces is a feature many remote backends support.
 
-
 ## Commands
 
 - terraform workspace list: Lists all available workspaces
@@ -57,3 +56,31 @@ Multiple workspaces is a feature many remote backends support.
 - terraform workspace select <workspace>: Selects a different workspace
 - terraform workspace new <workspace>: Creates a new workspace
 - terraform workspace delete <workspace>: Deletes a workspace
+
+
+# Workspaces / Terraform Cloud 
+
+A workspace in Terraform Cloud is more like an folder/project with multiple functionalities
+
+## Run triggers
+
+Connect your workspace to one or more workspaces via 'run triggers', AKA 'source workspaces'.
+
+You can connect workspaces up to 20 other workspaces via 'run triggers'.
+
+> run triggers are designed for infrastructure that relies on information of infrastructure produced by other workspaces
+
+
+# Summary
+
+- Local Terraform
+    - Configuration: on disk
+    - Variable values: on tfvars file, env var, command line, etc
+    - State: on disk or remote backend
+    - Credentials and secrets: shell environments or CLI prompt
+
+- Terraform Cloud
+    - Configuration: linked to a version control repo, or uploaded via API/CLI
+    - Varible values: stored in workspace (environment variables section)
+    - State: stored in workspace (states section)
+    - Credentials and secrets: in workspace (secrets section, you can tick a check to set a value as sensitive)

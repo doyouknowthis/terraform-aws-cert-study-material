@@ -12,8 +12,9 @@ can be used with **any resource** to change the behavior of the resource.
 
 ## depends_on
 
-The order of which resources are created is important. Usually not required to add explicit dependencies. Except when 
-you know (after resources were created) that something is wrong.
+The order of which resources are created is important when there is a dependency between resources. Usually not required to add explicit dependencies. 
+
+Except when you know (after resources were created) that something is wrong.
 
 ```hcl
 resource "aws_iam_policy" "example" {
@@ -70,9 +71,8 @@ resource "aws_instance" "example" {
 
 - create: creates a resource
 - destroy: a resource exists in the state and it's going to be destroyed
-- update in place: a resource exists in the state and one or more arguments are going to be updated
+- update in-place: a resource exists in the state and one or more arguments are going to be updated
 - destroy and then create: an argument has changed, and due to api limitations, is going to be re-created
-
 
 ## lifecycle
 
@@ -88,9 +88,10 @@ resource "aws_instance" "example" {
 }
 ```
 
+
 # Resource providers and aliases
 
-if you need to overwrite the default provider, you can use an `alias`.
+If you need to overwrite the default provider, you can use an `alias`.
 
 ```hcl
 provider "aws" {

@@ -15,8 +15,7 @@ day 0-2 is a simplified way to describe phases of an infra lifecycle.
 
 - reliability: makes changes idempotent, consistent, repeatable and predictable.
 
-> idempotent: don't matter how many times you run IaC, you will always get the same result
+> idempotent: doesn't matter how many times you run IaC, you will always get the same result
 
 - manageability: enables mutation via code. revised, with minimal changes.
 - sensibility: avoids issues when important institutions depend on infra
-

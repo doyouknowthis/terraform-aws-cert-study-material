@@ -1,10 +1,10 @@
 # Terraform Cloud
 
-Available on `app.terraform.io`
+Available at `app.terraform.io`
 
-> It's an application that helps teams use Terraform together
+It's an application that helps teams use Terraform together.
 
-It has lots of features such as:
+Lots of features such as:
 
 - manages state files
 - history of previous runs
@@ -28,7 +28,7 @@ It has lots of features such as:
 
 A collection of workspaces
 
-- Workspace
+- Workspaces
 
 Represents a unique environment or stack
 
@@ -43,7 +43,7 @@ Represents a single execution of Terraform run environment
 Runs can be: UI/VCS/API/CLI driven
 
 
-### Workflows
+## Workflows
 
 When you create a workspace, you can choose a workflow.
 
@@ -96,7 +96,7 @@ Permissions available for admins are:
 - set or remove workspace permissions
 - delete a workspace
 
-### API tokens
+## API tokens
 
 Terraform Cloud supports three types of API tokens:
 
@@ -127,7 +127,7 @@ Includes
 
 You can user either the user or team token for authentication, but the type of token grants or restrict you certain actions
 
-### Cost estimation
+## Cost estimation
 
 It's a feature that gets you a monthly cost report of resources
 
@@ -165,6 +165,14 @@ terraform {
 
 - Run `terraform init` and confirm you want to copy the state to Cloud by typing `yes`
 
+### VCS Integration
+
+- Github (and variants)
+- Gitlab (and variants)
+- Bitbucket (and variants)
+- Azure Devops Service / Server
+
+
 ## Run environment
 
 Terraform Cloud executes plan and apply commands in its own run environment
@@ -192,6 +200,8 @@ variable "TFC_RUN_ID" {
 
 It's a paid feature of Business tier to allow Terraform to communicate with isolated, private or on-premise infrastructure
 
+
+
 # Terraform Enterprise
 
 It's the self-hosted distribution of Terraform Platform
@@ -213,7 +223,7 @@ In a nutshell, you will need:
 
 ### Air gapped environments
 
-Air gap or disconnected network is a network security measure employed on one or more computers to ensure that a network 
+'Air gap' or 'disconnected network' is a network security measure employed on one or more computers to ensure that a network 
 is physically isolated from the Internet.
 
 > Industries in the public sector or large enterprises often employ air gapped networks
