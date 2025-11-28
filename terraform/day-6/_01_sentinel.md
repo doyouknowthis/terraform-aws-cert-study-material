@@ -13,6 +13,13 @@ When you write code to automate regulatory or governance policies
   - testing:
   - automation:
 
+### Sentinel and policy as code
+
+- Language: Sentinel policies are writtern using Sentinel Language
+  - Designed to be a non-programmer and programmer friendly, embeddable and safe
+- Development: Provides a CLI for development and testing
+- Testing: Provides a test framework specifically for automation
+
 ## Features
 
 - Embedded: enable policy enforcement to actively reject violation behavior instead of passively detecting
@@ -21,7 +28,7 @@ When you write code to automate regulatory or governance policies
 - External information
 - Multi-cloud compatible: ensure infra changes are within business and regulatory policy across multiple providers
 
-> Sentinel is a paid service
+> Sentinel is a paid service, part of Team & Governance upgrade package
 
 
 ## Examples

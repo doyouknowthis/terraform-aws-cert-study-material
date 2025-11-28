@@ -20,8 +20,7 @@ resource "aws_db_instance" "example" {
 }
 ```
 
-
-### complex types
+# Complex types
 
 It's a type that groups multiple types together.
 
@@ -33,7 +32,7 @@ There are two types of complex types:
 - structural types (for grouping potentially dissimilar values)
   - Tuple and Object
 
-### Collection types
+## Collection types
 
 - List: It's like any array, you access an element by its index
 
@@ -69,7 +68,7 @@ toset(["a","b",3])
 # => ["a", "b", "3"]
 ```
 
-### Structural types
+## Structural types
 
 Structural types require a schema as an argument to specify which types are allowed.
 
