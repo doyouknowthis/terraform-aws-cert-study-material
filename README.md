@@ -15,7 +15,9 @@
 ### Cert Exam questions
 
 - Terraform
-  - 
+   - https://www.whizlabs.com/blog/terraform-certification-exam-questions/
+   - https://www.itexams.com/info/Terraform-Associate
+   - https://www.examtopics.com/exams/hashicorp/terraform-associate/
 
 ### TODO
 
