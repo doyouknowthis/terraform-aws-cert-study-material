@@ -12,6 +12,11 @@
 - AWS
   - Soon
 
+### Cert Exam questions
+
+- Terraform
+  - 
+
 ### TODO
 
 - Refine concepts
