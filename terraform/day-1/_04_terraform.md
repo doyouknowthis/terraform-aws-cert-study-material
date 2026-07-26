@@ -8,7 +8,7 @@ Company that specializes in managed open-source tools
 - Consul
 - Nomad
 - Packer
-- Terrform/Terraform Cloud
+- Terraform/Terraform Cloud
 - Vagrant
 - Vault
 - Waypoint
@@ -16,7 +16,7 @@ Company that specializes in managed open-source tools
 
 # Terraform
 
-Open source and clou agnostic IaC tool. Files are written using HCL (hashicorp configuration language)
+Open source and cloud agnostic IaC tool. Files are written using HCL (hashicorp configuration language)
 
 > Uses declarative configuration files
 
@@ -57,7 +57,7 @@ It's a way to deal with change requests automatically.
 
 **Terraform uses *execution plans* and *resource graphs* for changesets**
 
-> changesets: a collection of commits made by an person that represents changes in a versioning repository.
+> changesets: a collection of commits made by a person that represents changes in a versioning repository.
 
 In conclusion: Change Automation allows you to know what Terraform will change and in what order avoiding many possible human errors.
 

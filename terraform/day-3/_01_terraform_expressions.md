@@ -30,7 +30,7 @@ use double quotes. it can interpret escape sequences.
 special escape sequences:
 
 - $${: literal ${, without beginning interpolation
-- %%{: literla %{, without beginning a template directive
+- %%{: literal %{, without beginning a template directive
 
 also supports HEREDOC style (unix style multiline strings)
 
@@ -54,7 +54,7 @@ Hello ${name}
 %{ endfor }
 EOT
 ```
-- You can stripe whitespace with %{~}
+- You can strip whitespace with %{~}
 ```
 <<EOT
 %{~ for name in var.names }
@@ -80,7 +80,7 @@ Allows you to iterate over a collection. it can accept a list, a map, a tuple, a
   - you can also get the index: `[for i, v in var.list : "${i} is ${v}"]`
 - on a map: `[for k, v in var.map : upper(k)]`
   - to return a tuple use square braces: `[for k, v in var.map : upper(k)]`
-- for an object, ues curly braces: {for k, v in var.map : s => upper(k)}. result is {key => value, ...}
+- for an object, use curly braces: {for k, v in var.map : s => upper(k)}. result is {key => value, ...}
 
 You can use `if` statements inside the for expression for filter/reduce operations
 
@@ -88,7 +88,7 @@ You can use `if` statements inside the for expression for filter/reduce operatio
 
 ### splat expressions
 
-Provides an shorter expressions for **for expressions**
+Provides a shorter expression for **for expressions**
 
 > is represented by the * operator, originates from the ruby language
 
@@ -120,7 +120,7 @@ resource "aws_security_group" "example" {
 ```
 
 
-# Version constrains
+# Version constraints
 
 Terraform uses semantic versioning
 
@@ -130,7 +130,7 @@ A version constraint is a range of acceptable versions
 
 - no operator or =: exact version
 - ! =: not equal to
-- \> >= < <=: compare against an specific version
+- \> >= < <=: compare against a specific version
 - ~>: allows the rightmost version (last number) to increment
 
 ## Progressive versioning

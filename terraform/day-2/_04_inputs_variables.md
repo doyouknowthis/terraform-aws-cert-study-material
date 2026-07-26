@@ -51,7 +51,7 @@ output "instance_id" {
 
 # Local values
 
-A block that allows to assign names to an expression. (so it can be used multiple times withing a module of terraform configuration)
+A block that allows to assign names to an expression. (so it can be used multiple times within a module of terraform configuration)
 
 ```terraform
 locals {

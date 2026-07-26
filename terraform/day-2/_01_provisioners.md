@@ -1,12 +1,12 @@
 # Provisioners
 
-Provisioners install stfw, edit files and provision machines created with Terraform.
+Provisioners install software, edit files and provision machines created with Terraform.
 
-There are 2 options: cloud-init and packer (it seems like cloud-init is preferred)
+There are two options: cloud-init and packer (it seems like cloud-init is preferred)
 
 > provisioners should be used as a last resort. there are better alternatives.
 
-**The main reason is that is out of the scope of Terraform (infra). Scripts are not reflected in a plan.**
+**The main reason is that it is out of the scope of Terraform (infra). Scripts are not reflected in a plan.**
 
 
 # Commands

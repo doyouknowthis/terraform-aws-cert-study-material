@@ -5,7 +5,7 @@ Allows you to manage multiple environments or alternate state files
 Two variants
 
 - CLI workspaces: manage state files either locally or remotely
-- Terraform Cloud workspaces: **completely different thing**, it's more like projects or folder
+- Terraform Cloud workspaces: **completely different thing**, it's more like projects or folders
 
 > workspaces are similar to git branches \
 > it's technically the same as renaming your state file
@@ -81,6 +81,6 @@ You can connect workspaces up to 20 other workspaces via 'run triggers'.
 
 - Terraform Cloud
     - Configuration: linked to a version control repo, or uploaded via API/CLI
-    - Varible values: stored in workspace (environment variables section)
+    - Variable values: stored in workspace (environment variables section)
     - State: stored in workspace (states section)
     - Credentials and secrets: in workspace (secrets section, you can tick a check to set a value as sensitive)

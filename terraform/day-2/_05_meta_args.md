@@ -34,7 +34,7 @@ resource "aws_instance" "example" {
 
 when managing a pool of objects, you can use count to create multiple resources.
 
-> count only accepts whole numbers AND must be know before hand.
+> count only accepts whole numbers AND must be known beforehand.
 
 ```hcl
 resource "aws_instance" "example" {
@@ -102,4 +102,4 @@ provider "aws" {
 resource "aws_instance" "example" {
     provider = aws.my-alias
 }
-``
+```

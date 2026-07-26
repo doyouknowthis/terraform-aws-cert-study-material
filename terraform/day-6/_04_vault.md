@@ -20,7 +20,7 @@ If we could
 - provide credentials just in time
 - and expire them after a short time
 
-we can reduce the attack surface are of the local machine.
+we can reduce the attack surface area of the local machine.
 
 **Vault can inject short-lived credentials at the time of `terraform apply`**
 

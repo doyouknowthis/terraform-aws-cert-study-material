@@ -5,7 +5,7 @@ Represent an infra object, like VM, databases, storage, etc.
 ```hcl
 resource "aws_instance" "example" { # aws_instance is a resource
     ...
-|
+}
 ```
 
 > some resource types provide special timeouts nested block that allow you to set different timeouts before being considered to have failed

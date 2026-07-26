@@ -15,7 +15,7 @@ When you write code to automate regulatory or governance policies
 
 ### Sentinel and policy as code
 
-- Language: Sentinel policies are writtern using Sentinel Language
+- Language: Sentinel policies are written using Sentinel Language
   - Designed to be a non-programmer and programmer friendly, embeddable and safe
 - Development: Provides a CLI for development and testing
 - Testing: Provides a test framework specifically for automation

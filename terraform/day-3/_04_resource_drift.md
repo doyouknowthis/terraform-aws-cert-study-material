@@ -14,8 +14,8 @@ Terraform Taint command is used to mark a resource for replacement for the next 
 
 Why would you do that? A cloud resource could be degraded or damaged and you want to return the state to a healthy status.
 
-> terraform tain aws_instance.my_resource \
-> command deprecated in 0.152
+> terraform taint aws_instance.my_resource \
+> command deprecated in v0.152
 
 The new way to replace resources is:
 
@@ -54,7 +54,7 @@ terraform import aws_instance.imported_instance <ID_ON_REMOTE_CLOUD>
 
 ## Terraform refresh
 
-Command read the current remote settings and updates the Terraform state to match
+Reads the current remote settings and updates the Terraform state to match
 
 > Previously, the command was `terraform refresh` but it was deprecated (it didn't give the opportunity to review changes and propose solutions) \
 > Now, `terraform apply -refresh-only (-auto-approve)` (basically the command `terraform refresh` ran behind the scenes)
@@ -72,8 +72,8 @@ Imagine a resource was deleted manually, you have two options
 Simply put:
 
 - `terraform fmt`, `terraform validate` or `terraform version` for syntax or configuration.
-- `terraform refresh(?)`, `terraform apply` or `terraform -replace-only` for state errors
-- TF_LOG env var to core or provider errors
+- `terraform refresh(?)`, `terraform apply` or `terraform apply -replace-only` for state errors
+- TF_LOG env var for core or provider errors
 
 ## Debugging 
 

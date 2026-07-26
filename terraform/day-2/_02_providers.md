@@ -19,7 +19,7 @@ A website portal where plugins are published, and documentation is available.
 
 ## Terraform Cloud - Private Registry
 
-Avaiable for Terraform Enterprise. Terraform Cloud allows you to host your own private registry and publish private modules.
+Available for Terraform Enterprise. Terraform Cloud allows you to host your own private registry and publish private modules.
 
 
 # Providers/Command
@@ -30,7 +30,7 @@ CLI to list available providers.
 
 ### Provider/Configuration
 
-```terrform
+```terraform
 provider "aws" {
     alias = "aws-us-east-1"
     region = "us-east-1"
