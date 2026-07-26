@@ -106,12 +106,12 @@ Terraform Cloud supports three types of API tokens:
   - Tokens are designed for creating and configuring **workspaces** and **teams**
     - Not recommended for all-purpose use
 - Team
-  - Allows access to the workspace a team was assigned to. Not tied to an specific user
+  - Allows access to the workspace a team was assigned to. Not tied to a specific user
   - Only available ONE at a time
   - Tokens are designed for performing API operations on **workspaces**
 - User
   - Could be a real user or a machine
-  - Flexible (it inherits permissions form the user they are assigned with)
+  - Flexible (it inherits permissions from the user they are assigned with)
 
 ## Private Registry
 
@@ -125,7 +125,7 @@ Includes
 
 > all users within the organization can view the private registry
 
-You can user either the user or team token for authentication, but the type of token grants or restrict you certain actions
+You can use either the user or team token for authentication, but the type of token grants or restricts you to certain actions
 
 ## Cost estimation
 
@@ -138,7 +138,7 @@ It's a feature that gets you a monthly cost report of resources
 
 - You can choose any version of Terraform for a workspace
 - You can choose to globally share the state file
-- You can choose wether to auto-approve or manually approve runs
+- You can choose whether to auto-approve or manually approve runs
 
 
 ### Migrate a local state to Terraform Cloud

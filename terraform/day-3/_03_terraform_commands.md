@@ -8,7 +8,7 @@ Initializes the terraform project by
 - creating the .terraform.lock.hcl dependency lock file
 
 > this command is always the first command to run when working with terraform \
-> if you modify or change dependencies, run the same command again so it apply the changes
+> if you modify or change dependencies, run the same command again so it applies the changes
 
 - `terraform init -upgrade`: upgrades plugins to the latest version
 - `terraform init -get-plugins=false`: skips downloading plugins
@@ -53,11 +53,11 @@ An interactive shell for evaluating expressions
 
 ## terraform plan
 
-The commands create the execution plan and show it.
+The command creates the execution plan and shows it.
 
 What it does is:
 - check the current state and make sure the state is up-to-date
-- compare the current state with the desired state and noting differences
+- compare the current state with the desired state and noting the differences
 - show the changes that will be made
 
 > It will simply show a list of changes, but it won't make any. \

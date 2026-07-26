@@ -1,6 +1,6 @@
 # Backends
 
-Each Terraform configuration can specify a backend, it defines where and how operations are defined
+Each Terraform configuration can specify a backend, it defines where and how operations are performed
 
 ## Standard backends
 
@@ -184,7 +184,7 @@ Local states are not secure, do not share the file with anyone
 
 Remote states with Terraform Cloud is secure in that scenario
 
-Be careful with Third-party backends and remote states, review the capabilities of the remote backend before commit to that solution
+Be careful with Third-party backends and remote states, review the capabilities of the remote backend before committing to that solution
 
 For example, AWS S3, you have to enable versioning and encryption and possibly create a custom trail for of events
 

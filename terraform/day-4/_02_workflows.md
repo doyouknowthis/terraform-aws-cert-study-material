@@ -11,16 +11,16 @@ Core terraform workflow has three steps:
 As an individual, you could the following steps:
 
 - write
-  - Use you editor of choice
+  - Use your editor of choice
   - Store your code in VCS
   - Run `plan` and `validate` repeatably
   - Run tests
 - plan
   - commit changes to repo
   - might have a single branch
-  - once commited, proceed to apply
+  - once committed, proceed to apply
 - apply
-  - will run apply after review the plan
+  - will run apply after reviewing the plan
   - once reviewed and applied you will have to wait for provisioning
   - if there are changes, commit and push to remote repo
 

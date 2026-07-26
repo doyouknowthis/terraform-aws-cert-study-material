@@ -52,6 +52,6 @@ terraform {
 }
 ```
 
-# Hahicorp Configuration Language - HCL
+# Hashicorp Configuration Language - HCL
 
 Open-source toolkit, used by many Hashicorp products (except Sentinel policies) that are both human and machine readable.

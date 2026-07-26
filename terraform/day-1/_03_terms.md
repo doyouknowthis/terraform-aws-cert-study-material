@@ -2,13 +2,13 @@
 
 ## Provisioning
 
-To prepare a server with systems, data and sftw and make it ready for operation using configuration management tools.
+To prepare a server with systems, data and software and make it ready for operation using configuration management tools.
 
 > when you launch a cloud service and configure it, you are "provisioning"
 
 ## Deployment
 
-The act of delivering a version of an application to a run a provisioned server.
+The act of delivering a version of an application to run a provisioned server.
 
 Tools used for this purpose could be: Jenkins, Circle CI, Github Actions.
 

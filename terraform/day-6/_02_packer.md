@@ -1,8 +1,8 @@
 # Packer
 
-It's a developer tool to provision to build machine that will be stored in a repository.
+It's a developer tool used to build machine that will be stored in a repository.
 
-A build image provides;
+A build image provides:
 
 - immutable infra
 - the VMs in your fleet are all one-to-one in configuration

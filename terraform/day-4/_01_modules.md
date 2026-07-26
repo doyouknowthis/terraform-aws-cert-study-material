@@ -11,7 +11,7 @@ Terraform Registry it's the best place.
 - Public modules
 ```hcl
 module "consul" {
-    source = "hashicorp/consul/aws" # namespace/name/provider
+    source = "hashicorp/consul/aws" # 'namespace/name/provider'
     version = "0.1.0"
 }
 ```
@@ -21,7 +21,7 @@ module "consul" {
 For private module you might need to configure Terraform Cloud via `terraform login`
 ```hcl
 module "vpc" {
-    source = "app.terraform.io.example_corp/vpc/aws" # hostname/namespace/name/provider
+    source = "app.terraform.io.example_corp/vpc/aws" # 'hostname/namespace/name/provider'
     version = "0.1.0"
 }
 ```
@@ -48,7 +48,7 @@ A badge (blue hexagon checkmark) is added to a module.
 
 This doesn't mean not verified modules are bad quality or risky.
 
-It could be also that it wasn't created by a Hashicorp's partner
+It could also be that it wasn't created by a Hashicorp's partner
 
 
 ## Standard Module Structure

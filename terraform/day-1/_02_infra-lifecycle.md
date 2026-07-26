@@ -9,7 +9,7 @@ day 0-2 is a simplified way to describe phases of an infra lifecycle.
 
 - day 0 is the planning and designing phase.
 - day 1 is the developing and iterating phase.
-- day 2 is, go live and maintain phase.
+- day 2 is the go live and maintain phase.
 
 ### how IaC enhances IL?
 
